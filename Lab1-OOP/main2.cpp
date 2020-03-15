@@ -3,7 +3,7 @@ using namespace std;
 #include "pb2a.h"
 #include "pb2b.h"
 
-int main()
+int main2()
 {	//Choose an option from the menu in order to run the solutions.
 
 	int choice;
@@ -11,18 +11,17 @@ int main()
 	{
 		system("CLS");
 		std::cout << "MENIU" << endl;
-		std::cout << "Option1:1a." << endl;
-		std::cout << "Option2:1b." << endl;
-		std::cout << "Option3:2a." << endl;
-		std::cout << "Option4:2b." << endl;
+		std::cout << "Option 1:2a." << endl;
+		std::cout << "Option 2:2b." << endl;
 		std::cout << "Enter your choice." << endl;
 		std::cin >> choice;
 
 		switch (choice)
 		{
-		/*case 1:
+		case 1:
+		{
 			int N;
-			int x = 2; 
+			int x = 2;
 
 			cout << "Enter a number\n";
 			cin >> N;
@@ -36,10 +35,11 @@ int main()
 				x++;
 			}
 			system("PAUSE");
-			
-		*/
+		}
+
 		case 2:
-			int v[100], n, c = 1, maxim = 1, start, stop;
+		{
+			int v[100], n, c = 1, maxim = 1, start=0, stop;
 			cin >> n;
 			for (int i = 1; i <= n; i++)
 				cin >> v[i];
@@ -59,12 +59,13 @@ int main()
 			for (int i = start; i <= stop; i++)
 				cout << v[i] << ' ';
 			return 0;
-		
-
-		
 		}
-		system("PAUSE");
-	} while (choice != 5);
-	return 0;
 
+		system("PAUSE");
+
+		}
+	}
+		while (choice != 5);
+		return 0;
+	
 }

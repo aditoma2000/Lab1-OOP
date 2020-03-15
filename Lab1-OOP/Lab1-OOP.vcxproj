@@ -103,6 +103,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -138,11 +140,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main1.cpp" />
+    <ClCompile Include="main2.cpp" />
+    <ClCompile Include="main_project.cpp" />
+    <ClCompile Include="pb1a.cpp" />
+    <ClCompile Include="pb1b.cpp" />
     <ClCompile Include="pb2b.cpp" />
     <ClCompile Include="pb2a.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="main1.h" />
+    <ClInclude Include="main2.h" />
+    <ClInclude Include="pb1a.h" />
+    <ClInclude Include="pb1b.h" />
     <ClInclude Include="pb2b.h" />
     <ClInclude Include="pb2a.h" />
   </ItemGroup>
