@@ -147,6 +147,7 @@
     <ClCompile Include="pb1b.cpp" />
     <ClCompile Include="pb2b.cpp" />
     <ClCompile Include="pb2a.cpp" />
+    <ClCompile Include="tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main1.h" />
@@ -155,6 +156,7 @@
     <ClInclude Include="pb1b.h" />
     <ClInclude Include="pb2b.h" />
     <ClInclude Include="pb2a.h" />
+    <ClInclude Include="tests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
